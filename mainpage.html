@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" href="style.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <title>Solar System || ScimuphileLab</title>
+  </head>
+  <body>
+    <div id="mainbody">
+      <nav id="navbar">
+        <a href="index.html">
+        <h4>ScimuphileLab</h4>
+        </a>
+      </nav>
+      <div id="middlediv">
+        
+<!-- +++++++++VIDEO DIVSION+++++++++++ -->
+
+        <video id="videodiv" src="videos/earth.mp4" loop ></video>
+        <ion-icon name="play-circle-sharp" id="ppbtn" onclick="vidplay()"></ion-icon>
+        
+<!-- +++++++++MODEL DIVSION+++++++++++ -->   
+      <model-viewer id="modeldiv" src="models/earth.glb"
+              skybox-image = 'clear.hdr'
+              auto-rotate
+              exposure="3"
+              camera-controls>
+
+      </model-viewer>  
+        
+<!-- ________3D VIEW BUTTON__________ -->
+        <div id="modelbtndiv" onclick="changedv()">
+          <ion-icon name="cube" id="modelicon"></ion-icon>
+          <h3 id="btntext">3D VIEW</h3>
+        </div>
+      </div>
+      
+
+<!-- _________Scroll Division__________-->
+      <div id="carouseldiv">
+        <div class="content" onclick="run('sun.mp4','sun.glb',id)" id="c1">
+          <img src="img/sun.png" />
+          <h2>Sun</h2>
+        </div>
+        <div class="content" onclick="run('mercury.mp4','mercury.glb',id)" id="c2">
+          <img src="img/mercury.png" />
+          <h2>Mercury</h2>
+        </div>
+        <div class="content" onclick="run('venus.mp4','venus.glb',id)" id="c3">
+          <img src="img/venus.png" />
+          <h2>Venus</h2>
+        </div>
+        <div class="content" onclick="run('earth.mp4','earth.glb',id)" id="c4">
+          <img src="img/earth.png" />
+          <h2>Earth</h2>
+        </div>
+         <div class="content" onclick="run('moon.mp4','moon.glb',id)" id="c5">
+          <img src="img/moon.png" />
+          <h2>Moon</h2>
+        </div>
+        <div class="content" onclick="run('mars.mp4','mars.glb',id)" id="c6">
+          <img src="img/mars.png" />
+          <h2>Mars</h2>
+        </div>
+        <div class="content" onclick="run('jupiter.mp4','jupiter.glb',id)" id="c7">
+          <img src="img/jupiter.png" />
+          <h2>Jupiter</h2>
+        </div>
+        <div class="content" onclick="run('saturn.mp4','saturn.glb',id)" id="c8">
+          <img src="img/saturn.png" />
+          <h2>Saturn</h2>
+        </div>
+        <div class="content" onclick="run('uranus.mp4','uranus.glb',id)" id="c9">
+          <img src="img/uranus.png" />
+          <h2>Uranus</h2>
+        </div>
+        <div class="content" onclick="run('neptune.mp4','neptune.glb',id)" id="c10">
+          <img src="img/neptune.png" />
+          <h2>Neptune</h2>
+        </div>
+      </div>
+      <!-- ___________FOOTER__________ -->
+		<div id="footer">
+		  <div id="footer1">
+		    <p class="footer1para1">
+		      SOLAR SYSTEM.
+		    </p>
+		    <p class="footerpara">
+		      In this website you find some information about solar system planets with their 3d model. 
+		    </p>
+		  </div>
+		  <div id="footer2">
+		    <p class="footer1para1">Developed By :</p>
+		    <p class="footerpara">
+		      @Tanbir pradhan.<br>
+		      @Om Pratyush Pradhan.<br>
+		      @Scimuphile Lab.
+		    </p>
+		  </div>
+		  <div id="footer3">
+		    <p class="footer1para1">Contact  Us :</p>
+		    <p class="footerpara">
+		      pradhantanbir@gmail<br>
+		      +91_6371704944<br>
+		      Follow on:
+		    </p>
+		    <a href="https://www.linkedin.com/in/tanbir-pradhan-545376222">
+		      <ion-icon id="ficon" name="logo-linkedin"></ion-icon>
+		    </a>
+		  </div>
+		</div>
+	
+		<div id="endfooter">
+		    <p class="footerpara">
+		    Copyright &#169; 2022 SolarSystem, All Rights Reserved.
+		    </p>
+	  </div>
+		
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="main.js"></script>
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js">
+    </script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  </body>
+</html>

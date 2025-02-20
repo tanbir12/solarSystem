@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <title>Solar System</title>
+  <style type="text/css" media="all">
+    * {
+      margin: 0px;
+      padding: 0px;
+      box-sizing: border-box;
+      font-family: Sans-Serif;
+    }
+
+    body {
+      width: 100%;
+      overflow: hidden;
+      background-color: #000000df;
+    }
+
+    #mainbody {
+      width: 100%;
+      height: 100vh;
+      background-image: url('background.jpg');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      display: flex;
+      flex-direction: column;
+    }
+
+    #navbar {
+      width: 100%;
+      height: 60px;
+      background-color: #ffffff2f;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    #navbar h3 {
+      font-size: 1.4rem;
+      margin-left: 30px;
+      color: white;
+    }
+
+    #rightnav {
+      width: 500px;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    #rightnav ul {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    #rightnav ul li {
+      width: 100%;
+      list-style: none;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: white;
+      margin: 0px 10px;
+      padding: 6px 20px;
+      cursor: pointer;
+      border-radius: 10px;
+      border: 2px solid rgba(255, 255, 255, 0);
+      transition-duration: 300ms;
+    }
+
+    #rightnav ul li:hover {
+      border: 2px solid rgba(247, 247, 247, 0.384);
+    }
+
+    #rightnav ul li a {
+      text-decoration: none;
+      color: white;
+    }
+
+    #rightnav ul li:hover a {
+      color: black;
+    }
+
+    /*___________Middle Division___________*/
+    .middlediv {
+      width: 100%;
+      height: 600px;
+      display: flex;
+      justify-content: flex-end;
+      background-color: transparent;
+    }
+
+    #midtextdiv {
+      width: 50%;
+      height: 50%;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 20px 6px;
+      opacity: 0;
+      margin-top: 350px;
+      transition-duration: 5s;
+    }
+
+    #midtextdiv h4 {
+      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+      margin: 6px;
+      font-size: 30px;
+      color: white;
+    }
+
+    #midtextdiv h1 {
+      font-family: 'Times New Roman', Times, serif;
+      margin-top: 10px;
+      font-size: 120px;
+      color: white;
+    }
+
+    #midtextdiv p {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-style: italic;
+      font-size: 15px;
+      color: white;
+    }
+
+    .desc-div{
+      width: 45vw;
+      margin-top: 50px;
+      color: white;
+    }
+    .desc-div h2{
+      font-size: 35px;
+      font-weight: 100;
+    }
+    .desc-div p{
+      margin-top: 20px;
+    }
+
+    #midtextdiv button {
+      margin-top: 20px;
+      font-size: 18px;
+      padding: 10px 20px;
+      color: black;
+      background-color: rgba(255, 255, 255, 0.856);
+      cursor: pointer;
+      font-family: sans-serif;
+      border: 2px solid #dbdbdb5e;
+      border-radius: 5px;
+      transition-duration: 0.5s;
+    }
+
+    #midtextdiv button i {
+      margin-left: 6px;
+      font-size: 16px;
+    }
+
+    #midtextdiv button:hover {
+      color: black;
+      border: 2px solid #ebebeb9e;
+      background-color: #ffffff;
+    }
+
+    #midtextdiv button:active {
+      border: 2px solid #dbdbdb9e;
+      background-color: #d5dffdab;
+    }
+
+    #vid {
+      display: none;
+    }
+  </style>
+</head>
+
+<body onload="Animation()">
+  <div id="mainbody">
+    <div id="navbar">
+      <h3>Scimuphile</h3>
+      <div id="rightnav">
+        <ul>
+          <li onclick="home()">Home</li>
+          <li onclick="home()">Help?</li>
+          <li onclick="home()">Contact</li>
+          <li onclick="video()">About_Us</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Middle Division -->
+    <div class="middlediv" id="middlediv">
+      <div id="midtextdiv">
+        <h4>Explore Our</h4>
+        <h1>Solar System</h1>
+        <p>With a great experience of 3d models and virtual reality.</p>
+        
+        <div class="desc-div">
+          <h2>Discover, Learn, and Explore </h2>
+          <p>
+            🚀 &nbsp; Watch Informative Videos
+           Get detailed insights about each planet with engaging video content. Learn about their unique characteristics,
+           atmospheres, and histories with expert-led explanations. Interactive 3D Models View stunning, high-resolution 3D models of planets, moons, and other celestial bodies. Rotate, zoom in, and
+           explore every detail with ease.
+          </p>
+          <p>
+            🚀 &nbsp; Start your journey today and explore the solar system like never before! ✨
+          </p>
+        </div>
+        
+        <a href="mainpage.html">
+          <button type="submit">Let's go <i class="fa fa-arrow-right" aria-hidden="true"></i> </button>
+        </a>
+      </div>
+    </div>
+    <!-- <video id="vid" class="middlediv" src="about.mp4"></video> -->
+  </div>
+  <script type="text/javascript">
+    function Animation() {
+      document.getElementById('midtextdiv').style.opacity = "1.0";
+      document.getElementById('midtextdiv').style.marginTop = "160px";
+    }
+    function video() {
+      document.getElementById("middlediv").style.display = "none";
+      document.getElementById("mainbody").style.backgroundImage = "none";
+      document.getElementById("vid").style.display = "flex";
+      document.getElementById("vid").play();
+    }
+    function home() {
+      window.location.reload();
+    }
+  </script>
+</body>
+
+</html>
